@@ -3,7 +3,12 @@
 
 
 minetest.register_on_joinplayer(function(player)
-	local name = player:get_player_name()
+	local name = "unknown-net-error"
+	if not player then
+		name = "unknown-net-error"
+	else
+		name = player:get_player_name()
+	end
 	if irc.connected and irc.config.send_join_part then
 		irc.say("*** "..name.." joined the game")
 	end
@@ -11,7 +16,12 @@ end)
 
 
 minetest.register_on_leaveplayer(function(player, timed_out)
-	local name = player:get_player_name()
+	local name = "unknown-net-error"
+	if not player then
+		name = "unknown-net-error"
+	else
+		name = player:get_player_name()
+	end
 	if irc.connected and irc.config.send_join_part then
 		irc.say("*** "..name.." left the game"..
 				(timed_out and " (Timed out)" or ""))
