@@ -1,13 +1,13 @@
 IRC Mod API
 ===========
 
-This file documents the Minetest IRC mod API.
+This file documents the Minetest IRC mod API. For more general info check [README.md](README.md)
 
 Basics
 ------
 
 In order to allow your mod to interface with this mod, you must add `irc`
-to your mod's `depends.txt` file.
+to your mod's `depends.txt` or `mod.conf` file.
 
 
 Reference
@@ -88,3 +88,4 @@ when some events happen. The events supported are the same as the LuaIRC
 ones with a few added (mostly for internal use).
 See src/LuaIRC/doc/irc.luadoc for more information.
 
+See also check [README.md](README.md)
