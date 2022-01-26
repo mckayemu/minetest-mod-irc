@@ -66,4 +66,4 @@ setting("bool",   "enable_player_part", true) -- Whether to enable players joini
 setting("bool",   "auto_join", true) -- Whether to automatically show players in the channel when they join
 setting("bool",   "auto_connect", true) -- Whether to automatically connect to the server on mod load
 setting("string", "chat_color", "#339933") -- Color of IRC chat in-game, green by default
-setting("string", "pm_color", "#8800AA") -- Color of IRC PMs in-game, purple by default
+setting("string", "pm_color", "#827f00") -- Color of IRC PMs in-game, yellow by default
